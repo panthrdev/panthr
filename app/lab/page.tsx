@@ -477,7 +477,7 @@ export default function LabPage() {
             <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               X / Twitter
             </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+            <a href="https://github.com/panthrdev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               GitHub
             </a>
           </div>

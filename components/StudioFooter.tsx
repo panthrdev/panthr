@@ -77,7 +77,7 @@ export default function StudioFooter() {
               </li>
               <li>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/panthrdev"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center space-x-1 hover:text-[#737380] transition-colors"

@@ -180,7 +180,7 @@ export default function ContactPage() {
                     <ArrowUpRight className="w-3.5 h-3.5 text-[#64748B]" />
                   </a>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/panthrdev"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-between p-3 rounded-xl bg-[#F8F9FA] hover:bg-black/[0.04] text-[#0F1015] font-medium transition-colors"
@@ -390,7 +390,7 @@ export default function ContactPage() {
             <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               X / Twitter
             </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+            <a href="https://github.com/panthrdev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               GitHub
             </a>
           </div>
