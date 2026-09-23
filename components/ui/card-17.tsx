@@ -29,16 +29,16 @@ export const LocationCard = ({
   const mouseXSpring = useSpring(x, { stiffness: 300, damping: 25 });
   const mouseYSpring = useSpring(y, { stiffness: 300, damping: 25 });
 
-  // Create transforms for rotation based on mouse position
+  // Create transforms for rotation based on mouse position (cursor side lifts up)
   const rotateX = useTransform(
     mouseYSpring,
     [-0.5, 0.5],
-    ["15deg", "-15deg"]
+    ["-15deg", "15deg"]
   );
   const rotateY = useTransform(
     mouseXSpring,
     [-0.5, 0.5],
-    ["-15deg", "15deg"]
+    ["15deg", "-15deg"]
   );
 
   // Handle mouse movement over the card
@@ -71,7 +71,7 @@ export const LocationCard = ({
           transformStyle: "preserve-3d",
         }}
         className={cn(
-          "relative w-full h-[340px] sm:h-80 rounded-xl bg-cover bg-center cursor-pointer",
+          "relative w-full h-[340px] sm:h-80 rounded-2xl bg-white border border-black/[0.08] cursor-pointer",
           "shadow-lg transition-shadow duration-300 hover:shadow-2xl",
           className
         )}

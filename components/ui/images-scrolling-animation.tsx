@@ -91,7 +91,7 @@ const StickyCard_001 = ({
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent pointer-events-none" />
 
       {/* Card Info Pill */}
-      <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex items-center justify-between pointer-events-none">
+      <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex items-end justify-between gap-4 pointer-events-none">
         <div>
           {category && (
             <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#CCFF00] text-[#0F1015] font-mono text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-1.5 shadow-xs">
@@ -103,8 +103,9 @@ const StickyCard_001 = ({
           </h3>
         </div>
 
-        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 flex items-center justify-center text-white group-hover:bg-[#CCFF00] group-hover:text-[#0F1015] group-hover:border-[#CCFF00] transition-colors shadow-sm">
-          <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        <div className="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-mono text-[11px] sm:text-xs font-semibold tracking-wider flex items-center space-x-1.5 shrink-0 shadow-lg group-hover:bg-[#CCFF00] group-hover:text-[#0F1015] group-hover:border-[#CCFF00] group-hover:scale-105 group-hover:shadow-[0_0_24px_rgba(204,255,0,0.6)] transition-all duration-300 ease-out">
+          <span>View</span>
+          <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.5] transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </div>
       </div>
     </motion.div>
