@@ -71,7 +71,7 @@ export const LocationCard = ({
           transformStyle: "preserve-3d",
         }}
         className={cn(
-          "relative w-full h-[340px] sm:h-80 rounded-2xl bg-white border border-black/[0.08] cursor-pointer",
+          "relative w-full h-[340px] sm:h-80 rounded-xl bg-cover bg-center cursor-pointer",
           "shadow-lg transition-shadow duration-300 hover:shadow-2xl",
           className
         )}

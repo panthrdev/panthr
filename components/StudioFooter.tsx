@@ -55,7 +55,7 @@ export default function StudioFooter() {
             <ul className="space-y-2 text-[#0A0A0C]">
               <li>
                 <a
-                  href="https://dribbble.com"
+                  href="https://dribbble.com/panthrDev"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center space-x-1 hover:text-[#737380] transition-colors"
@@ -66,7 +66,7 @@ export default function StudioFooter() {
               </li>
               <li>
                 <a
-                  href="https://x.com"
+                  href="https://x.com/panthrDev"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center space-x-1 hover:text-[#737380] transition-colors"
@@ -88,7 +88,7 @@ export default function StudioFooter() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/panthr/"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center space-x-1 hover:text-[#737380] transition-colors"

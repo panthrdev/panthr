@@ -160,12 +160,28 @@ export default function CommandPalette() {
       shortcut: "⌘C",
     },
     {
+      id: "act-twitter",
+      category: "Quick Actions",
+      label: "X / Twitter Profile",
+      description: "Follow design engineering updates",
+      icon: <ExternalLink className="w-4 h-4 text-[#94A3B8]" />,
+      action: () => { window.open("https://x.com/panthrDev", "_blank"); setIsOpen(false); },
+    },
+    {
+      id: "act-linkedin",
+      category: "Quick Actions",
+      label: "LinkedIn Professional",
+      description: "Connect & discuss contracts",
+      icon: <ExternalLink className="w-4 h-4 text-[#94A3B8]" />,
+      action: () => { window.open("https://www.linkedin.com/in/panthr/", "_blank"); setIsOpen(false); },
+    },
+    {
       id: "act-github",
       category: "Quick Actions",
       label: "GitHub Repositories",
       description: "Inspect open-source code & tooling",
       icon: <ExternalLink className="w-4 h-4 text-[#94A3B8]" />,
-      action: () => { window.open("https://github.com", "_blank"); setIsOpen(false); },
+      action: () => { window.open("https://github.com/panthrdev", "_blank"); setIsOpen(false); },
     },
     {
       id: "act-dribbble",
@@ -173,7 +189,7 @@ export default function CommandPalette() {
       label: "Dribbble Visual Feed",
       description: "High-resolution interface shots",
       icon: <ExternalLink className="w-4 h-4 text-[#94A3B8]" />,
-      action: () => { window.open("https://dribbble.com", "_blank"); setIsOpen(false); },
+      action: () => { window.open("https://dribbble.com/panthrDev", "_blank"); setIsOpen(false); },
     },
   ];
 

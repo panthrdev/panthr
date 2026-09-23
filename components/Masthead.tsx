@@ -179,13 +179,13 @@ export default function Masthead() {
               <div className="flex items-center justify-between text-[#64748B] pt-2">
                 <span>panthr.dev</span>
                 <div className="flex items-center space-x-4">
-                  <a href="https://dribbble.com" target="_blank" rel="noreferrer" className="hover:text-white">
+                  <a href="https://dribbble.com/panthrDev" target="_blank" rel="noreferrer" className="hover:text-white">
                     Dribbble
                   </a>
-                  <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-white">
+                  <a href="https://x.com/panthrDev" target="_blank" rel="noreferrer" className="hover:text-white">
                     Twitter
                   </a>
-                  <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white">
+                  <a href="https://github.com/panthrdev" target="_blank" rel="noreferrer" className="hover:text-white">
                     GitHub
                   </a>
                 </div>

@@ -471,11 +471,14 @@ export default function LabPage() {
           </div>
 
           <div className="flex items-center space-x-6 font-medium">
-            <a href="https://dribbble.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+            <a href="https://dribbble.com/panthrDev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               Dribbble
             </a>
-            <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+            <a href="https://x.com/panthrDev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               X / Twitter
+            </a>
+            <a href="https://www.linkedin.com/in/panthr/" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+              LinkedIn
             </a>
             <a href="https://github.com/panthrdev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               GitHub

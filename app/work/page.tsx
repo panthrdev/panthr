@@ -42,7 +42,7 @@ const ALL_DESIGNS = [
     overview: "Telemetry dashboard monitoring sub-second global cloud edge deployments with tactile zooming and kinetic sparkline graphs.",
     status: "Concept",
     featured: false,
-    liveUrl: "https://dribbble.com"
+    liveUrl: "https://dribbble.com/panthrDev"
   }
 ];
 
@@ -114,15 +114,12 @@ function WorkProjectTiltCard({
             rotateY,
             transformStyle: "preserve-3d",
           }}
-          className="relative w-full h-full rounded-2xl sm:rounded-3xl bg-white border border-black/[0.08] shadow-lg transition-shadow duration-300 group-hover:shadow-2xl"
+          className="relative w-full h-full rounded-2xl sm:rounded-3xl border border-black/10 bg-[#0F1015] shadow-xl transition-shadow duration-300 group-hover:shadow-[0_28px_65px_rgba(0,0,0,0.45)]"
         >
-          {/* Inner Floating 3D Image Card with translateZ */}
+          {/* Base Background Image Layer (No zoom on hover) */}
           <div
-            style={{
-              transform: "translateZ(50px)",
-              transformStyle: "preserve-3d",
-            }}
-            className="absolute inset-0 rounded-2xl sm:rounded-3xl overflow-hidden bg-[#0F1015] shadow-xl"
+            className="absolute inset-0 rounded-2xl sm:rounded-3xl overflow-hidden"
+            style={{ transform: "translateZ(0px)" }}
           >
             {/* Project Image */}
             <img
@@ -133,56 +130,56 @@ function WorkProjectTiltCard({
 
             {/* Dark gradient overlay for typography readability */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/10" />
+          </div>
 
-            {/* Top-Center Watermark Logo */}
-            <div
-              style={{
-                transform: "translateZ(20px)",
-                transformStyle: "preserve-3d",
-              }}
-              className="absolute top-3.5 sm:top-4 left-1/2 -translate-x-1/2 pointer-events-none select-none z-10"
-            >
-              <Image
-                src="/logo.webp"
-                alt="panthr logo watermark"
-                width={48}
-                height={48}
-                className="w-7 h-7 sm:w-8 sm:h-8 object-contain brightness-0 invert opacity-20 group-hover:opacity-40 transition-opacity duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]"
-              />
+          {/* Top-Center Watermark Logo */}
+          <div
+            style={{
+              transform: "translateZ(20px)",
+              transformStyle: "preserve-3d",
+            }}
+            className="absolute top-4 sm:top-5 left-1/2 -translate-x-1/2 pointer-events-none select-none z-10"
+          >
+            <Image
+              src="/logo.webp"
+              alt="panthr logo watermark"
+              width={48}
+              height={48}
+              className="w-7 h-7 sm:w-8 sm:h-8 object-contain brightness-0 invert opacity-20 group-hover:opacity-40 transition-opacity duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]"
+            />
+          </div>
+
+          {/* Floating Card Info in Left Bottom (Popped 65px into 3D space) */}
+          <div
+            style={{
+              transform: "translateZ(65px)",
+              transformStyle: "preserve-3d",
+            }}
+            className="absolute bottom-5 left-5 right-5 sm:bottom-7 sm:left-7 sm:right-7 pointer-events-none flex items-end justify-between gap-4"
+          >
+            <div className="min-w-0">
+              {item.category && (
+                <div style={{ transform: "translateZ(18px)" }}>
+                  <span className="inline-block px-3 py-1 rounded-full bg-[#CCFF00] text-[#0F1015] font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2.5 shadow-xs">
+                    {item.category}
+                  </span>
+                </div>
+              )}
+              <h3
+                style={{ transform: "translateZ(26px)" }}
+                className="text-xl sm:text-2xl font-extrabold text-white tracking-tight leading-snug drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]"
+              >
+                {item.title}
+              </h3>
             </div>
 
-            {/* Floating Card Info in Bottom */}
+            {/* Kinetic Text Capsule Action Button */}
             <div
-              style={{
-                transform: "translateZ(35px)",
-                transformStyle: "preserve-3d",
-              }}
-              className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 pointer-events-none flex items-end justify-between gap-3 sm:gap-4"
+              style={{ transform: "translateZ(20px)" }}
+              className="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-mono text-[11px] sm:text-xs font-semibold tracking-wider flex items-center space-x-1.5 shrink-0 shadow-lg group-hover:bg-[#CCFF00] group-hover:text-[#0F1015] group-hover:border-[#CCFF00] group-hover:scale-105 group-hover:shadow-[0_0_24px_rgba(204,255,0,0.6)] transition-all duration-300 ease-out"
             >
-              <div className="min-w-0">
-                {item.category && (
-                  <div style={{ transform: "translateZ(15px)" }}>
-                    <span className="inline-block px-3 py-1 rounded-full bg-[#CCFF00] text-[#0F1015] font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2 sm:mb-2.5 shadow-xs">
-                      {item.category}
-                    </span>
-                  </div>
-                )}
-                <h3
-                  style={{ transform: "translateZ(20px)" }}
-                  className="text-lg sm:text-2xl font-extrabold text-white tracking-tight leading-snug drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]"
-                >
-                  {item.title}
-                </h3>
-              </div>
-
-              {/* Kinetic Text Capsule Action Button */}
-              <div
-                style={{ transform: "translateZ(20px)" }}
-                className="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-mono text-[11px] sm:text-xs font-semibold tracking-wider flex items-center space-x-1.5 shrink-0 shadow-lg group-hover:bg-[#CCFF00] group-hover:text-[#0F1015] group-hover:border-[#CCFF00] group-hover:scale-105 group-hover:shadow-[0_0_24px_rgba(204,255,0,0.6)] transition-all duration-300 ease-out"
-              >
-                <span>View</span>
-                <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.5] transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </div>
+              <span>View</span>
+              <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.5] transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </div>
           </div>
         </motion.div>
@@ -263,11 +260,14 @@ export default function AllWorksPage() {
           </div>
 
           <div className="flex items-center space-x-6 font-medium">
-            <a href="https://dribbble.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+            <a href="https://dribbble.com/panthrDev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               Dribbble
             </a>
-            <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+            <a href="https://x.com/panthrDev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               X / Twitter
+            </a>
+            <a href="https://www.linkedin.com/in/panthr/" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+              LinkedIn
             </a>
             <a href="https://github.com/panthrdev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               GitHub

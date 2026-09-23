@@ -171,7 +171,7 @@ export default function ContactPage() {
                 </span>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <a
-                    href="https://x.com"
+                    href="https://x.com/panthrDev"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-between p-3 rounded-xl bg-[#F8F9FA] hover:bg-black/[0.04] text-[#0F1015] font-medium transition-colors"
@@ -189,7 +189,7 @@ export default function ContactPage() {
                     <ArrowUpRight className="w-3.5 h-3.5 text-[#64748B]" />
                   </a>
                   <a
-                    href="https://dribbble.com"
+                    href="https://dribbble.com/panthrDev"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-between p-3 rounded-xl bg-[#F8F9FA] hover:bg-black/[0.04] text-[#0F1015] font-medium transition-colors"
@@ -198,7 +198,7 @@ export default function ContactPage() {
                     <ArrowUpRight className="w-3.5 h-3.5 text-[#64748B]" />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/panthr/"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-between p-3 rounded-xl bg-[#F8F9FA] hover:bg-black/[0.04] text-[#0F1015] font-medium transition-colors"
@@ -384,11 +384,14 @@ export default function ContactPage() {
           </div>
 
           <div className="flex items-center space-x-6 font-medium">
-            <a href="https://dribbble.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+            <a href="https://dribbble.com/panthrDev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               Dribbble
             </a>
-            <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+            <a href="https://x.com/panthrDev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               X / Twitter
+            </a>
+            <a href="https://www.linkedin.com/in/panthr/" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
+              LinkedIn
             </a>
             <a href="https://github.com/panthrdev" target="_blank" rel="noreferrer" className="hover:text-[#0F1015] transition-colors">
               GitHub
