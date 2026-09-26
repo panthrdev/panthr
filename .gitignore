@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# personal workspace & studio drafts
+GEMINI.md
+UI_IDEAS.md
+app/playground/
+components/playground/

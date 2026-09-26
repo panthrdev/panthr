@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# panthr.dev
 
-First, run the development server:
+### High-Craft UI Mechanics, Kinetic Physics & Design Engineering Laboratory
+
+[![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.0-black?style=flat-square&logo=framer)](https://www.framer.com/motion/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-CCFF00?style=flat-square&labelColor=0F1015)](LICENSE)
+
+<br />
+
+<!-- Hero Preview GIF -->
+<img src=".github/assets/card-01.gif" alt="Fluid Testimonial Card Stack - panthr.dev" width="100%" />
+
+<br />
+<br />
+
+**[Live Laboratory](https://panthr.dev/lab)** • **[Studio Portfolio](https://panthr.dev)**
+
+</div>
+
+---
+
+## ✦ Featured Component: `card-01`
+### Fluid Testimonial Card Stack
+
+A calm, tactile testimonial stack engineered in React with Framer Motion spring physics.
+
+* **Spring Fan-Out:** Hovering the deck fluidly fans cards out laterally (`targetX = offset * 320px`, `stiffness: 300, damping: 27`) with zero layout occlusion.
+* **Signature Corner Portrait:** Author photography sits flush covering the top-left corner with a distinct rounded inner corner (`rounded-br-2xl`).
+* **Swiss Typographic Rigor:** Verified partner badge, 5-star micro-ratings, and date timestamps with zero generic pill badges or internal horizontal dividers.
+* **High Contrast & Light/Dark Immune:** Explicit color tokens ensuring crisp legibility across both Light and Dark operating systems.
+
+---
+
+### 📋 Drop-In Code
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install framer-motion lucide-react
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```tsx
+import { FluidTestimonialCardStack } from "@/components/ui/card-01";
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+export default function Page() {
+  return (
+    <main className="min-h-screen flex items-center justify-center p-8 bg-[#F8F9FA] dark:bg-[#090A0E]">
+      <FluidTestimonialCardStack theme="light" />
+    </main>
+  );
+}
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clone the repository
+git clone https://github.com/panthrdev/panthr.git
+cd panthr
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Install dependencies
+pnpm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Run the development server
+pnpm dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) with your browser to explore the laboratory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License & Attribution
+
+Crafted by **[panthr.dev](https://panthr.dev)**. Open source under the [MIT License](LICENSE).
+
+```markdown
+*Component crafted with [panthr.dev](https://panthr.dev/lab)*
+```
